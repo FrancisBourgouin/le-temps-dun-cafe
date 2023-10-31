@@ -196,6 +196,7 @@ export default function CreateBreak() {
             >
               {Object.values(videos).map((video) => (
                 <button
+                  key={video.id}
                   value={video.id}
                   style={{ backgroundImage: `url(${video.thumbnailUrl})` }}
                   onClick={updateVideoButton}
