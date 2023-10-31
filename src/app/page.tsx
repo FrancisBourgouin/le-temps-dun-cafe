@@ -1,3 +1,5 @@
+"use client";
+
 import "./page.scss";
 import Link from "next/link";
 import { videos } from "@/data/videoData";
