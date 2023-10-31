@@ -26,6 +26,7 @@ export default function CreateBreak() {
   const [formData, setFormData] = useState(initialValues);
   const [scope, animate] = useAnimate();
   const [copiedText, copyToClipboard] = useCopyToClipboard();
+  const [randomIndex, setRandomIndex] = useState(Math.floor(Math.random() * 8));
 
   const values = {
     time: formData.time.value,
@@ -33,7 +34,7 @@ export default function CreateBreak() {
     video: formData.video.value,
   };
   const urlParams = new URLSearchParams(values);
-  const generatedLink = `https://letempsdun.cafe/${urlParams}`;
+  const generatedLink = `https://letempsdun.cafe/break?${urlParams}`;
   console.log(generatedLink);
 
   const toggleSection = (sectionName: "time" | "position" | "video") =>
@@ -105,6 +106,12 @@ export default function CreateBreak() {
 
   return (
     <>
+      <video
+        autoPlay
+        loop
+        muted
+        src={Object.values(videos)[randomIndex].videoUrl}
+      ></video>
       <main>
         <header>
           <h1>C'est le temps d'un café !</h1>

@@ -1,0 +1,31 @@
+main {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.countdown h1 {
+  font-size: 9em;
+  font-weight: 900;
+  position: absolute;
+  color: white;
+  z-index: 900;
+  margin: 0;
+  // font-family: "Sometype Mono", monospace;
+}
+
+.countdown.top-left h1 {
+  left: 5vw;
+  top: 3vw;
+}
+.countdown.top-right h1 {
+  right: 5vw;
+  top: 3vw;
+}
+.countdown.bottom-left h1 {
+  left: 5vw;
+  bottom: 3vw;
+}
+.countdown.bottom-right h1 {
+  bottom: 3vw;
+  right: 5vw;
+}
