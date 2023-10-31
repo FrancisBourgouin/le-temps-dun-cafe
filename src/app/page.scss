@@ -1,0 +1,14 @@
+// Header
+
+header {
+  width: 100%;
+  padding: 2em;
+  background: var(--background);
+  max-width: 800px;
+  color: var(--text);
+  border-radius: 0.5em;
+
+  & > h1 {
+    margin: 0 0 1em;
+  }
+}

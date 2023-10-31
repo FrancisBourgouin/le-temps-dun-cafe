@@ -1,0 +1,41 @@
+:root {
+  // --text: #f7f8fd;
+  // --background: #020308;
+  // --primary: #859dff;
+  // --secondary: #0f1738;
+  // --accent: #4661ce;
+
+  --accentTwo: hsl(205.49deg 62.12% 47.42%);
+  --text: #fafafa;
+  --background: #050505;
+  --primary: #ccc7ca;
+  --secondary: #282527;
+  --accent: #91888e;
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  min-height: 100vh;
+}
+
+video {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+header,
+main {
+  position: relative;
+  z-index: 1;
+}
